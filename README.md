@@ -12,7 +12,7 @@ pip install pyzhuyin
 
 ## Usage 使用
 ```python
-from pyzhuyin.convert import pinyin_to_zhuyin, zhuyin_to_pinyin
+from pyzhuyin import pinyin_to_zhuyin, zhuyin_to_pinyin
 
 
 assert(pinyin_to_zhuyin("lu3 dan4") == ["ㄌㄨˇ", "ㄉㄢˋ"])

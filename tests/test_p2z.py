@@ -1,6 +1,6 @@
 import unittest
 
-from pyzhuyin.convert import pinyin_to_zhuyin
+from pyzhuyin import pinyin_to_zhuyin
 from .dictionary import p2z, p2z_u2v
 
 
