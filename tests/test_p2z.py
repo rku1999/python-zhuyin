@@ -8,7 +8,7 @@ class TestPy2Zy(unittest.TestCase):
     def test_pinyin_to_zhuyin(self):
         for p, z in p2z.items():
             self.assertEqual(z, pinyin_to_zhuyin(p))
-        
+
     def test_pinyin_to_zhuyin_u2v(self):
         for p, z in p2z_u2v.items():
             self.assertEqual(z, pinyin_to_zhuyin(p))
