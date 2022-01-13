@@ -22,6 +22,14 @@ assert(zhuyin_to_pinyin("ㄌㄩˊ ˙ㄗ") == ["lü2", "zi5"])
 assert(zhuyin_to_pinyin("ㄌㄩˊ ˙ㄗ", u_to_v=True) == ["lv2", "zi5"])
 ```
 
+## Testing 測試
+Run the following command at the root of the project to test the library:
+
+在根目錄執行以下指令以測試套件:
+```shell
+python3 -m unittest
+```
+
 ## Notes 備註
 - Only support numeric tone for pinyin
     - e.g. "lu3" instead of "lǔ" 
