@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="pyzhuyin",
-    version="0.0.2",
+    version="0.0.3",
     author="Raymond Ku",
     description="注音和拼音的轉換工具",
     long_description=long_desc,
