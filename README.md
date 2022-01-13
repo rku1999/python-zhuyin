@@ -15,11 +15,13 @@ pip install pyzhuyin
 from pyzhuyin import pinyin_to_zhuyin, zhuyin_to_pinyin
 
 
-assert(pinyin_to_zhuyin("lu3 dan4") == ["ㄌㄨˇ", "ㄉㄢˋ"])
-assert(zhuyin_to_pinyin("ㄌㄨˇ ㄉㄢˋ") == ["lu3", "dan4"])
+assert(pinyin_to_zhuyin("lu3") == "ㄌㄨˇ")
+assert(pinyin_to_zhuyin("dan4") == "ㄉㄢˋ")
+assert(map(pinyin_to_zhuyin, ["lu3", "dan4"]) == ["ㄌㄨˇ", "ㄉㄢˋ"])
 
-assert(zhuyin_to_pinyin("ㄌㄩˊ ˙ㄗ") == ["lü2", "zi5"])
-assert(zhuyin_to_pinyin("ㄌㄩˊ ˙ㄗ", u_to_v=True) == ["lv2", "zi5"])
+assert(zhuyin_to_pinyin("ㄌㄩˊ") == "lü2")
+assert(zhuyin_to_pinyin("˙ㄗ") == "zi5")
+assert(map(lambda z: zhuyin_to_pinyin(z, u_to_v=True), ["ㄌㄩˊ", "˙ㄗ"]) == ["lv2", "zi5"])
 ```
 
 ## Testing 測試
